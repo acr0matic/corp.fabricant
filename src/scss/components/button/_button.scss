@@ -1,6 +1,8 @@
 .button {
+  padding: 16px 32px;
+
   border: none;
-  border-radius: $border-radius--button;
+  border-radius: 12px;
   outline: none;
 
   background-color: transparent;
@@ -13,5 +15,10 @@
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  &--big {
+    padding: 28px 36px;
+    font-size: $font-size__text--large;
   }
 }
