@@ -3,9 +3,56 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
+  position: sticky;
+  top: -120px;
 }
 
 .header {
+  &__content {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 
+  &__nav {
+    border-bottom: 5px solid $palette-gray;
+    background-color: $palette-gray;
+
+    // background-color: rgba(#000000, 0.5);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact,
+  &__callback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > * {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__contact {
+    margin-left: auto;
+  }
+
+  &__callback {
+    margin-left: 54px;
+  }
+
+  &__phone {
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+
+    line-height: 1;
+  }
+
+  &__email {
+    font-size: $font-size__text--small;
+  }
 }

@@ -4,11 +4,60 @@
 
 .nav {
   &__list {
+    display: flex;
   }
 
   &__item {
   }
 
   &__link {
+  }
+
+  &--header {
+    .nav__list {
+      align-items: center;
+      justify-content: space-between;
+
+      height: 75px;
+    }
+
+    .nav__item {
+      position: relative;
+      flex: 1 0 auto;
+
+      height: 100%;
+
+      text-align: center;
+
+      @media (hover: hover) {
+        &:hover::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+
+        width: 0;
+        height: 5px;
+        background-color: $palette-orange;
+
+        transition: $transition ease;
+      }
+    }
+
+    .nav__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 100%;
+
+      color: $color-text__white;
+      font-size: $font-size__text--big;
+    }
   }
 }
