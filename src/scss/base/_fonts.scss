@@ -2,7 +2,8 @@
 // В этом файле подключаются все шрифты через font-face, если таковые есть
 // -----------------------------------------------------------------------------
 
-@include font-face("Roboto", "../fonts/Roboto/Roboto-Light", 300);
-@include font-face("Roboto", "../fonts/Roboto/Roboto-Regular", 400);
-@include font-face("Roboto", "../fonts/Roboto/Roboto-Medium", 500);
-@include font-face("Roboto", "../fonts/Roboto/Roboto-Bold", 700);
+@include font-face("NotoSans", "../fonts/NotoSans/NotoSans-Regular", 400);
+@include font-face("NotoSans", "../fonts/NotoSans/NotoSans-Medium", 500);
+@include font-face("NotoSans", "../fonts/NotoSans/NotoSans-Bold", 700);
+
+@include font-face("NotoSerif", "../fonts/NotoSerif/NotoSerif-Bold", 700);
