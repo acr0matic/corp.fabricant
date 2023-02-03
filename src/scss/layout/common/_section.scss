@@ -1,9 +1,44 @@
 .section {
-  &__header {
+  &:not(:first-child) {
+    padding-top: 120px;
+  }
 
+  &__header {
+    margin-bottom: 60px;
   }
 
   &__title {
+    font-size: $font-size__title--small;
+    font-family: NotoSerif, sans-serif;
 
+    text-align: center;
+    text-transform: uppercase;
+
+    &--line {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: block;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $palette-black;
+
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        left: 65%;
+      }
+
+      &::after {
+        right: 65%;
+      }
+    }
   }
 }

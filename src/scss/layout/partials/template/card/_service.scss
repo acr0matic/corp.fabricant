@@ -1,0 +1,54 @@
+.card-service {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    background-color: rgba(#000000, 0.5);
+  }
+
+  &__picture {
+    width: 100%;
+    height: 200px;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    margin-top: 32px;
+
+    color: $color-text__white;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
+}
