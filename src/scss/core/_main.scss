@@ -10,7 +10,7 @@
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 8px;
+  --bs-gutter-x: 12px;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -40,7 +40,7 @@
   }
 }
 .row {
-  --bs-gutter-x: 16px;
+  --bs-gutter-x: 24px;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;

@@ -1,0 +1,31 @@
+.card-advantage {
+  padding: 16px;
+
+  border-radius: 30px;
+  background-color: $palette-lightgray;
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    color: $color-text__orange;
+
+    font-size: $font-size__text--big;
+    font-family: NotoSerif, sans-serif;
+
+    line-height: 1.5;
+  }
+
+  &__icon {
+    margin-left: auto;
+  }
+
+  &__content {
+    font-size: $font-size__text--small;
+    text-align: justify;
+  }
+}
