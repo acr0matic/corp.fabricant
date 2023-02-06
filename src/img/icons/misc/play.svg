@@ -1,0 +1,10 @@
+<svg class="svg about-order__play" width="65" height="64" viewBox="0 0 65 64" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <circle cx="32.5675" cy="31.7808" r="27.8158" fill="white" fill-opacity="0.54"
+      shape-rendering="crispEdges" />
+  </g>
+  <path
+    d="M45.1274 34.6438L28.7315 43.5584C26.4017 44.8252 23.5623 43.1518 23.5418 40.4999L23.4065 22.9242C23.3861 20.2724 26.1995 18.5554 28.5485 19.7861L45.0797 28.4472C47.5676 29.7507 47.5949 33.3022 45.1274 34.6438Z"
+    fill="#D9D9D9" stroke="black" stroke-width="0.902912" />
+</svg>
