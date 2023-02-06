@@ -17,7 +17,7 @@
     font-size: $font-size__text--big;
     font-family: NotoSerif, sans-serif;
 
-    line-height: 1.5;
+    line-height: $line-height--tall;
   }
 
   &__icon {
