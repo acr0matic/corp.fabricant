@@ -7,6 +7,7 @@
 
   background-color: transparent;
 
+  text-align: center;
   white-space: nowrap;
   cursor: pointer;
 
@@ -20,5 +21,9 @@
   &--big {
     padding: 28px 36px;
     font-size: $font-size__text--large;
+  }
+
+  &--block {
+    width: 100%;
   }
 }

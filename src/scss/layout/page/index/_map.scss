@@ -1,0 +1,16 @@
+#map {
+}
+
+.map {
+  &__title {
+    position: relative;
+    z-index: 2;
+    font-size: $font-size__text--large + 3px;
+    text-align: center;
+  }
+
+  &__picture {
+    position: relative;
+    margin-top: -50px;
+  }
+}

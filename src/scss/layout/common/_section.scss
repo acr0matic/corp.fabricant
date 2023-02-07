@@ -16,6 +16,8 @@
 
     &--line {
       position: relative;
+      width: fit-content;
+      margin: 0 auto;
 
       &::before,
       &::after {
@@ -33,11 +35,11 @@
       }
 
       &::before {
-        left: 65%;
+        left: calc(100% + 15px);
       }
 
       &::after {
-        right: 65%;
+        right: calc(100% + 15px);
       }
     }
   }

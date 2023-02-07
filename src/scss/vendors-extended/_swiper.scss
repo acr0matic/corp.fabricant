@@ -1,0 +1,10 @@
+.swiper {
+  &-button {
+    font-weight: $weight-Bold;
+    text-transform: uppercase;
+
+    &--active {
+      background-color: $palette-orange;
+    }
+  }
+}
