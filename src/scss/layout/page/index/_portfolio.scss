@@ -1,0 +1,17 @@
+#portfolio-home {
+
+}
+
+.portfolio-home {
+  &__action {
+    margin-top: 72px;
+    text-align: center;
+
+    a {
+      font-weight: $weight-Bold;
+      font-size: $font-size__text--large;
+
+      text-transform: uppercase;
+    }
+  }
+}

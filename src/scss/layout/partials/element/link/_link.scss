@@ -6,4 +6,9 @@
       color: $color-text__orange !important;
     }
   }
+
+  &--underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
 }

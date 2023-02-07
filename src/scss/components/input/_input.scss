@@ -23,18 +23,20 @@
 
   &__field {
     width: 100%;
-    padding: 20px 25px;
+    padding: 12px 25px;
 
-    border: 1px solid $palette-black;
+    border: none;
+    border-radius: 12px;
     outline: none;
 
-    background-color: transparent;
+    background-color: $palette-white;
     color: $color-text__primary;
 
-    font-size: $font-size__text--regular;
+    box-shadow: 0 2px 6px rgba(#000000, 0.2);
+    font-size: $font-size__title--medium;
 
     &::placeholder {
-      color: #353535;
+      color: $color-text__gray;
     }
   }
 

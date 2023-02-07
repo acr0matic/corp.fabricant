@@ -18,3 +18,16 @@ const homePortfolio = new Swiper('#slider-portfolio-home .swiper', {
     }
   }
 })
+
+const sliderCallback = new Swiper('#slider-callback .swiper', {
+  simulateTouch: false,
+
+  autoplay: {
+    delay: 5000,
+  },
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});

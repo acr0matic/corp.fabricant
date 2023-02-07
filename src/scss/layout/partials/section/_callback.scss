@@ -1,0 +1,54 @@
+#callback {
+  .section__header {
+    margin-bottom: 36px;
+  }
+
+  .section__title {
+    font-weight: $weight-Bold;
+    font-size: $font-size__title--medium - 8px;
+    font-family: NotoSans, sans-serif;
+
+    line-height: $line-height--secondary;
+    text-transform: initial;
+
+    span {
+      font-weight: $weight-Regular;
+      font-size: $font-size__title--small - 4px;
+    }
+  }
+}
+
+.callback {
+  padding: 36px;
+  border-radius: 36px;
+
+  background-color: $palette-lightgray;
+  box-shadow: 0 4px 20px rgba(#000000, 0.2);
+
+  &__info {
+    margin-bottom: 36px;
+
+    font-size: $font-size__text--large;
+    text-align: center;
+  }
+
+  &__form {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 32px;
+
+    font-weight: $weight-Bold;
+    text-align: center;
+
+    a {
+      font-size: $font-size__title--small;
+    }
+  }
+}

@@ -527,8 +527,92 @@
           <!-- /.swiper -->
         </div>
         <!-- /.slider -->
+
+        <div class="portfolio-home__action">
+          <a class="link link--underline" href="">остальные объекты</a>
+        </div>
+        <!-- /.portfolio-home__action -->
       </div>
       <!-- /.portfolio-home -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="callback" class="section">
+    <div class="container">
+      <div class="callback">
+        <div class="row">
+          <div class="col-7">
+            <div class="section__header">
+              <h2 class="section__title">
+                Получите консультацию
+                <br>
+                <span>и расчёт стоимости вашего заказа</span>
+              </h2>
+            </div>
+            <!-- /.section__header -->
+
+            <p class="callback__info">
+              Ответим на все ваши вопросы
+            </p>
+
+            <form class="callback__form form form-callback">
+              <div class="input mb-4">
+                <input placeholder="+7(__) ___-___-___" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                <img data-tippy-content="" class="input__warning" src="" alt="">
+              </div>
+              <!-- /.input -->
+
+              <button class="button button--big button--block button-primary" data-sending="Отправка..." type="submit">Жду звонка!</button>
+
+              <p class="form__privacy">
+                Вы соглашаетесь с условиями
+                <br>
+                обработки персональных данных
+              </p>
+            </form>
+
+            <div class="callback__action">
+              или звоните
+              <a class="link" href="tel:">+7 (8512) 99-52-52</a>
+            </div>
+            <!-- /.callback__action -->
+          </div>
+          <!-- /.col-7 -->
+
+          <div class="col-5">
+            <div id="slider-callback" class="slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    @@include('layout/template/card/contact.html', {
+                    "image": "img/content/callback/1.png",
+                    "name": "Лилия Кудрявцева",
+                    "role": "Менеджер по работе с клиентами"
+                    })
+                  </div>
+                  <!-- /.swiper-slide -->
+
+                  <div class="swiper-slide">
+                    @@include('layout/template/card/contact.html', {
+                    "image": "img/content/callback/2.png",
+                    "name": "Сергей Можаров",
+                    "role": "Руководитель корпоративного отдела"
+                    })
+                  </div>
+                  <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+              </div>
+              <!-- /.swiper slider-callback -->
+            </div>
+            <!-- /.slider -->
+          </div>
+          <!-- /.col-5 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.callback -->
     </div>
     <!-- /.container -->
   </section>
