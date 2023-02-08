@@ -5,10 +5,16 @@
 #header {
   position: sticky;
   z-index: $z-index-header;
-  top: -100px;
+  top: var(--header-offset);
 }
 
 .header {
+  &--background {
+    .header__nav {
+      background-color: $palette-gray;
+    }
+  }
+
   &__content {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -16,9 +22,9 @@
 
   &__nav {
     border-bottom: 5px solid $palette-gray;
-    background-color: $palette-gray;
+    background-color: rgba($color: #000000, $alpha: 0.5);
 
-    // background-color: rgba(#000000, 0.5);
+    transition: $transition ease;
   }
 
   &__wrapper {
