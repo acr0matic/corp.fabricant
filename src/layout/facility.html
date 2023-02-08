@@ -1,0 +1,71 @@
+@@include('layout/partials/header.html')
+
+<main id="facility" class="page">
+  <section id="facility" class="section">
+    <div class="container">
+      <ol class="page__breadcrumbs">
+        <li>
+          <a class="link" href="">Главная</a>
+        </li>
+
+        <li>
+          <span>Объекты</span>
+        </li>
+      </ol>
+      <!-- /.page__breadcrumbs -->
+
+      <div class="page__header">
+        <h1 class="page__title page__title--big">
+          Объекты
+        </h1>
+      </div>
+      <!-- /.page__header -->
+
+      <div class="facility">
+        <div class="facility__info">
+          Нажмите на категорию, чтобы увидеть только объекты выбранной категории
+        </div>
+
+        <div class="facility__category">
+          <button class="button button-outline">все объекты</button>
+          <button class="button button-outline">Жилые комплексы</button>
+          <button class="button button-outline">офисные здания</button>
+          <button class="button button-outline">Торговые центры</button>
+          <button class="button button-outline">Банки</button>
+
+          <button class="button button-outline">Мед. учереждения</button>
+          <button class="button button-outline">учебные заведения</button>
+          <button class="button button-outline">Развлекательные центры</button>
+          <button class="button button-outline">кафе и рестораны</button>
+          <button class="button button-outline">театры</button>
+
+          <button class="button button-outline">театры</button>
+        </div>
+        <!-- /.facility__category -->
+
+        <div class="facility__grid">
+          @@loop('layout/template/card/facility.html', [
+          { "title": "My post title", "image": "img/content/facility/1.jpg" },
+          { "title": "Another post", "image": "img/content/facility/2.jpg" },
+          { "title": "One more post", "image": "img/content/facility/3.jpg" },
+          { "title": "One more post", "image": "img/content/facility/4.jpg" },
+          { "title": "One more post", "image": "img/content/facility/5.jpg" },
+          { "title": "One more post", "image": "img/content/facility/9.jpg" },
+          { "title": "One more post", "image": "img/content/facility/10.jpg" },
+          { "title": "One more post", "image": "img/content/facility/12.jpg" },
+          { "title": "One more post", "image": "img/content/facility/6.jpg" },
+          { "title": "One more post", "image": "img/content/facility/7.jpg" },
+          { "title": "One more post", "image": "img/content/facility/8.jpg" },
+          { "title": "One more post", "image": "img/content/facility/5.jpg" },
+          { "title": "One more post", "image": "img/content/facility/9.jpg" }
+          ])
+        </div>
+        <!-- /.facility__grid -->
+      </div>
+      <!-- /.facility -->
+    </div>
+    <!-- /.container -->
+  </section>
+</main>
+
+@@include('layout/partials/footer.html')

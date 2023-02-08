@@ -3,5 +3,58 @@
 // -----------------------------------------------------------------------------
 
 .page {
+  &__breadcrumbs {
+    display: inline-flex;
+    align-items: center;
 
+    margin-top: 8px;
+    margin-bottom: 24px;
+
+    li {
+      font-weight: $weight-Medium;
+
+      &:not(:last-child) {
+        a {
+          color: $color-text__gray;
+        }
+
+        &::after {
+          content: "/";
+          margin-right: 4px;
+
+          color: $color-text__orange;
+        }
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      display: block;
+
+      width: 64px;
+      height: 64px;
+
+      margin-right: 24px;
+
+      background-image: url("../img/icons/misc/page__header.svg");
+      background-position: center center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &--big {
+      font-weight: $weight-Bold;
+      font-size: $font-size__title--large;
+    }
+  }
 }

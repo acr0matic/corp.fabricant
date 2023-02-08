@@ -1,0 +1,52 @@
+#facility {
+}
+
+.facility {
+  &__info {
+    margin-top: -30px;
+    color: $color-text__gray;
+  }
+
+  &__category {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+    margin-right: -16px;
+    margin-bottom: -20px;
+
+    button {
+      flex-grow: 1;
+
+      margin-right: 16px;
+      margin-bottom: 20px;
+
+      font-weight: $weight-Bold;
+      text-transform: uppercase;
+    }
+
+    &::after {
+      content: "";
+      flex-grow: 100;
+    }
+  }
+
+  &__grid {
+    display: inline-flex;
+    flex-flow: wrap;
+
+    margin: -12px;
+    padding-top: 48px;
+
+    &::after {
+      content: "";
+      flex-grow: 100;
+    }
+
+    & > * {
+      position: relative;
+      flex-grow: 1;
+      margin: 12px;
+    }
+  }
+}
