@@ -1,0 +1,34 @@
+.single-facility {
+  &__gallery {
+    display: inline-flex;
+    flex-flow: wrap;
+
+    margin: -12px;
+    padding-top: 48px;
+
+    &::after {
+      content: "";
+      flex-grow: 100;
+    }
+
+    & > * {
+      position: relative;
+      flex-grow: 1;
+      margin: 12px;
+    }
+  }
+
+  &__picture {
+    overflow: hidden;
+    height: 190px;
+    border-radius: 6px;
+
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}

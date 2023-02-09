@@ -1,0 +1,123 @@
+@@include('layout/partials/header.html')
+
+<main id="single-facility" class="page">
+  <section id="single-facility" class="section">
+    <div class="container">
+      <ol class="page__breadcrumbs">
+        <li>
+          <a class="link" href="">Главная</a>
+        </li>
+
+        <li>
+          <a class="link" href="">Объекты</a>
+        </li>
+
+        <li>
+          <span>Объекты</span>
+        </li>
+      </ol>
+      <!-- /.page__breadcrumbs -->
+
+      <div class="page__header">
+        <h1 class="page__title">
+          ЖК Сердце Каспия
+        </h1>
+      </div>
+      <!-- /.page__header -->
+
+      <div class="single-facility">
+        <div data-editor="default" class="single-facility__description">
+          <p>
+            Жилой комплекс «Сердце Каспия» — это масштабный проект комфорт-класса от компании City Group Development. Комплекс находится между двумя набережными города: с одной стороны от него находится берег Волги, а с другой – Приволжский затон. Первые и вторые этажи зданий комплекса занимают коммерческие помещения с панорамными витринными
+            окнами, высокими потолками (от 3,4 м), индивидуальным отоплением и отдельными входами.
+          </p>
+        </div>
+        <!-- /.single-facility__description -->
+
+        <div class="single-facility__gallery">
+          <picture class="single-facility__picture">
+            <a data-fslightbox href="img/content/facility/1.jpg">
+              <img class="image image--cover" src="img/content/facility/1.jpg" alt="">
+            </a>
+          </picture>
+          <!-- /.card-advantage -->
+
+          <picture class="single-facility__picture">
+            <a data-fslightbox href="img/content/facility/2.jpg">
+              <img class="image image--cover" src="img/content/facility/2.jpg" alt="">
+            </a>
+          </picture>
+          <!-- /.card-advantage -->
+
+          <picture class="single-facility__picture">
+            <a data-fslightbox href="img/content/facility/3.jpg">
+              <img class="image image--cover" src="img/content/facility/3.jpg" alt="">
+            </a>
+          </picture>
+          <!-- /.card-advantage -->
+
+          <picture class="single-facility__picture">
+            <a data-fslightbox href="img/content/facility/4.jpg">
+              <img class="image image--cover" src="img/content/facility/4.jpg" alt="">
+            </a>
+          </picture>
+          <!-- /.card-advantage -->
+
+          <picture class="single-facility__picture">
+            <a data-fslightbox href="img/content/facility/4.jpg">
+              <img class="image image--cover" src="img/content/facility/4.jpg" alt="">
+            </a>
+          </picture>
+          <!-- /.card-advantage -->
+        </div>
+        <!-- /.single-facility__gallery -->
+      </div>
+      <!-- /.single-facility -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section id="related" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title text-start">
+          Другие проекты
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="related">
+        <div class="row">
+          <div class="col-3">
+            @@include('layout/template/card/facility.html',
+            { "title": "My post title", "image": "img/content/facility/1.jpg" })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/facility.html',
+            { "title": "My post title", "image": "img/content/facility/1.jpg" })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/facility.html',
+            { "title": "My post title", "image": "img/content/facility/1.jpg" })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/facility.html',
+            { "title": "My post title", "image": "img/content/facility/1.jpg" })
+          </div>
+          <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.related -->
+    </div>
+    <!-- /.container -->
+  </section>
+</main>
+
+@@include('layout/partials/footer.html')

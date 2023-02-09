@@ -1,0 +1,13 @@
+[data-editor="default"] {
+  font-weight: $weight-Medium;
+
+  p {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular - 4px;
+    }
+  }
+}

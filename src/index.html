@@ -973,40 +973,43 @@
       <div class="callback">
         <div class="row">
           <div class="col-7">
-            <div class="section__header">
-              <h2 class="section__title">
-                Получите консультацию
-                <br>
-                <span>и расчёт стоимости вашего заказа</span>
-              </h2>
-            </div>
-            <!-- /.section__header -->
-
-            <p class="callback__info">
-              Ответим на все ваши вопросы
-            </p>
-
-            <form class="callback__form form form-callback">
-              <div class="input mb-4">
-                <input placeholder="+7(__) ___-___-___" autocomplete="off" type="tel" name="user_phone" class="input__field">
-                <img data-tippy-content="" class="input__warning" src="" alt="">
+            <div class="callback__wrapper">
+              <div class="section__header">
+                <h2 class="section__title">
+                  Получите консультацию
+                  <br>
+                  <span>и расчёт стоимости вашего заказа</span>
+                </h2>
               </div>
-              <!-- /.input -->
+              <!-- /.section__header -->
 
-              <button class="button button--big button--block button-primary" data-sending="Отправка..." type="submit">Жду звонка!</button>
-
-              <p class="form__privacy">
-                Вы соглашаетесь с условиями
-                <br>
-                обработки персональных данных
+              <p class="callback__info">
+                Ответим на все ваши вопросы
               </p>
-            </form>
 
-            <div class="callback__action">
-              или звоните
-              <a class="link" href="tel:">+7 (8512) 99-52-52</a>
+              <form class="callback__form form form-callback">
+                <div class="input mb-4">
+                  <input placeholder="+7 (___) ____-___-___" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                  <span class="input__warning" src="" alt="">Номер телефона содержит ошибки</span>
+                </div>
+                <!-- /.input -->
+
+                <button class="button button--big button--block button-primary" data-sending="Отправка..." type="submit">Жду звонка!</button>
+
+                <p class="form__privacy">
+                  Вы соглашаетесь с условиями
+                  <br>
+                  обработки персональных данных
+                </p>
+              </form>
+
+              <div class="callback__action">
+                или звоните
+                <a class="link" href="tel:">+7 (8512) 99-52-52</a>
+              </div>
+              <!-- /.callback__action -->
             </div>
-            <!-- /.callback__action -->
+            <!-- /.callback__wrapper -->
           </div>
           <!-- /.col-7 -->
 
@@ -1048,7 +1051,12 @@
                 </div>
                 <!-- /.swiper-wrapper -->
               </div>
-              <!-- /.swiper slider-callback -->
+              <!-- /.swiper -->
+
+              <div class="swiper-control">
+                <div class="swiper-button-next"></div>
+              </div>
+              <!-- /.swiper-control -->
             </div>
             <!-- /.slider -->
           </div>
@@ -1167,9 +1175,11 @@
 <!-- Скрипты -->
 <!-- build:js js/script.min.js -->
 <script src="scripts/libraries/lazyload.js"></script>
-<script src="scripts/libraries/forms.js"></script>
 <script src="scripts/libraries/swiper.min.js"></script>
 <script src="scripts/libraries/fslightbox.js"></script>
+<script src="scripts/libraries/imask.js"></script>
+<script src="scripts/libraries/micromodal.min.js"></script>
+<script src="scripts/libraries/forms.js"></script>
 
 <script src="scripts/base.js"></script>
 <script src="scripts/init.js"></script>

@@ -35,6 +35,9 @@
   &__title {
     display: flex;
     align-items: center;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__title--small;
     text-transform: uppercase;
 
     &::before {
@@ -53,7 +56,6 @@
     }
 
     &--big {
-      font-weight: $weight-Bold;
       font-size: $font-size__title--large;
     }
   }

@@ -8,8 +8,9 @@
   }
 
   &__title {
+    font-weight: $weight-Bold;
     font-size: $font-size__title--small;
-    font-family: NotoSerif, sans-serif;
+    font-family: NotoSerif, serif;
 
     text-align: center;
     text-transform: uppercase;

@@ -44,7 +44,7 @@ class Form {
   Mask() {
     // Маска для номера телефона
     if (this.phone) IMask(this.phone, {
-      mask: '+{7} 000 000-00-00',
+      mask: '+{7} (000) 000-00-00',
       prepare: (appended, masked) => ((appended === '8' && masked.value === '') ? '' : appended),
     });
 

@@ -21,9 +21,15 @@ const homePortfolio = new Swiper('#slider-portfolio-home .swiper', {
 
 const sliderCallback = new Swiper('#slider-callback .swiper', {
   simulateTouch: false,
+  loop: true,
 
   autoplay: {
     delay: 5000,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: '#slider-callback .swiper-button-next',
   },
 
   effect: 'fade',

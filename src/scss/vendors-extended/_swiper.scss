@@ -6,5 +6,34 @@
     &--active {
       background-color: $palette-orange;
     }
+
+    &-prev,
+    &-next {
+      width: 54px;
+      height: 54px;
+
+      border-radius: 50%;
+
+      background-color: rgba(#bebebe, 0.8);
+      background-position: center center;
+      background-size: 28px;
+      background-repeat: no-repeat;
+
+      transition: $transition ease;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: rgba(#bebebe, 1);
+        }
+      }
+
+      &::after {
+        content: "";
+      }
+    }
+
+    &-next {
+      background-image: url("../img/icons/control/slider__next.svg");
+    }
   }
 }
