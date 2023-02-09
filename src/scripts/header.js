@@ -4,20 +4,23 @@ if (header) {
   const content = header.querySelector('.header__content');
   let contentHeight = 0;
 
-  SetHeight(content);
-  window.addEventListener('resize', () => SetHeight(content));
+  const Background = () => {
+    if (window.scrollY >= contentHeight) header.classList.add(StyleСlass.header.background)
+    else header.classList.remove(StyleСlass.header.background)
+  }
 
-  function SetHeight(target) {
+  const SetHeight = (target) => {
     contentHeight = target.offsetHeight;
     document.documentElement.style.setProperty('--header-offset', -contentHeight + 'px');
   }
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY >= contentHeight) header.classList.add(StyleСlass.header.background)
-    else header.classList.remove(StyleСlass.header.background)
-  });
+  SetHeight(content);
+  Background();
 
+  window.addEventListener('resize', () => SetHeight(content));
+  window.addEventListener('scroll', () => Background());
 
+  // ------------------------------------------------------------------
 
   const mobile = document.querySelector('.mobile-menu');
   const mobileOverlay = document.querySelector('.mobile-menu__overlay');
