@@ -3,6 +3,10 @@
 // -----------------------------------------------------------------------------
 
 #header {
+  @include breakpoint($breakpoint-tablet--large) {
+    top: 0;
+  }
+
   position: sticky;
   z-index: $z-index-header;
   top: var(--header-offset);
@@ -16,8 +20,19 @@
   }
 
   &__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      border-bottom: 4px solid $palette-gray;
+      background-color: $palette-white;
+    }
+
     padding-top: 18px;
     padding-bottom: 18px;
+  }
+
+  &__logo {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin: 0 auto;
+    }
   }
 
   &__nav {

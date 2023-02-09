@@ -9,6 +9,10 @@
   }
 
   &__background {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+    }
+
     position: absolute;
     z-index: -1;
     top: -10%;
@@ -16,6 +20,19 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      width: 92.5%;
+
+      padding: 18px 4px 18px 0;
+      border-bottom-right-radius: 45px;
+
+      background-color: $palette-orange;
+
+      font-size: $font-size__text--regular;
+      line-height: $line-height--primary;
+      text-transform: none;
+    }
+
     position: relative;
     padding: 28px 0;
 
@@ -28,19 +45,58 @@
     line-height: $line-height--tall;
     text-transform: uppercase;
 
-    &::before {
+    span {
+      position: relative;
+      z-index: 3;
+    }
+
+    &::before,
+    &::after {
       content: "";
       position: absolute;
+    }
+
+    &::before {
+      @include breakpoint($breakpoint-tablet) {
+        background-color: $palette-orange;
+      }
+
+      z-index: 2;
       top: 0;
       right: 100%;
 
       width: 100vw;
       height: 100%;
+
       background-color: $palette-gray;
+    }
+
+    &::after {
+      @include breakpoint($breakpoint-tablet) {
+        display: initial;
+      }
+
+      z-index: -1;
+      top: 0;
+      left: 0;
+
+      display: none;
+
+      width: 100vw;
+      height: 70%;
+
+      background-color: #dfdfdf;
+      box-shadow: 0 3px 7px rgba(#000000, 0.25);
     }
   }
 
   &__info {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 32px;
+      padding-left: 0;
+      font-size: $font-size__text--regular;
+    }
+
     margin-top: 64px;
     padding-left: 32px;
 
@@ -48,9 +104,17 @@
   }
 
   &__heading {
+    @include breakpoint($breakpoint-tablet) {
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--large;
+    }
   }
 
   &__list {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 24px;
+    }
+
     margin-top: 36px;
     padding-left: 24px;
 
@@ -58,16 +122,29 @@
 
     li {
       &:not(:last-child) {
+        @include breakpoint($breakpoint-tablet) {
+          margin-bottom: 8px;
+        }
+
         margin-bottom: 16px;
       }
     }
   }
 
   &__action {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 36px;
+      text-align: center;
+    }
+
     margin-top: 64px;
     text-align: right;
 
     .button {
+      @include breakpoint($breakpoint-tablet) {
+        margin-right: 0;
+      }
+
       margin-right: 24px;
     }
   }
@@ -91,6 +168,13 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 36px;
+
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--large;
+    }
+
     margin-bottom: 64px;
 
     font-size: $font-size__title--small;

@@ -1,4 +1,8 @@
 .button {
+  @include breakpoint($breakpoint-mobile--large) {
+    border-radius: 8px;
+  }
+
   padding: 16px 32px;
 
   border: none;
@@ -19,6 +23,11 @@
   }
 
   &--big {
+    @include breakpoint($breakpoint-mobile--large) {
+      padding: 16px 24px;
+      font-size: $font-size__text--big;
+    }
+
     padding: 28px 36px;
     font-size: $font-size__text--large;
   }

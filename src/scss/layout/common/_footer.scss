@@ -11,6 +11,10 @@
 
 .footer {
   &__content {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 36px 0;
+    }
+
     position: relative;
     padding: 75px 0;
 
@@ -47,7 +51,19 @@
     color: $color-text__gray;
   }
 
+  &__copyright {
+    @include breakpoint($breakpoint-tablet) {
+      br {
+        display: none;
+      }
+    }
+  }
+
   &__privacy {
+    @include breakpoint($breakpoint-tablet--large) {
+      text-align: left;
+    }
+
     display: block;
     margin-top: -8px;
     padding: 8px 0;

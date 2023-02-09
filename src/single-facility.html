@@ -66,6 +66,15 @@
     <div class="header__content">
       <div class="container">
         <div class="header__wrapper">
+          <div class="header__burger d-block d-lg-none">
+            <button class="hamburger hamburger--squeeze" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <!-- /.header__burger -->
+
           <div class="header__logo">
             <a href="">
               <img class="logo logo--header" src="img/logo.svg" alt="">
@@ -73,7 +82,7 @@
           </div>
           <!-- /.header__logo -->
 
-          <div class="header__contact">
+          <div class="header__contact d-none d-lg-block">
             <a class="link mb-2" href="" target="_blank">
               <img class="me-2" src="img/icons/contact/pin.svg" alt="">
               1-й проезд Рождественского, 1А
@@ -86,7 +95,7 @@
           </div>
           <!-- /.header__contact -->
 
-          <div class="header__callback">
+          <div class="header__callback d-none d-lg-block">
             <a class="header__phone link mb-2" href="tel:">
               <img class="me-3" src="img/icons/contact/phone.svg" alt="">
               8 (8512) 99-52-52
@@ -98,6 +107,10 @@
             </a>
           </div>
           <!-- /.header__callback -->
+
+          <a class="header__call d-block d-lg-none" href="tel:">
+            <img src="img/icons/contact/phone--big.svg" alt="">
+          </a>
         </div>
         <!-- /.header__wrapper -->
       </div>
@@ -105,7 +118,7 @@
     </div>
     <!-- /.header__content -->
 
-    <div class="header__nav">
+    <div class="header__nav d-none d-lg-block">
       <div class="container">
         <nav class="nav nav--header">
           <ul class="nav__list">
@@ -283,14 +296,14 @@
     <div class="footer">
       <div class="footer__content">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-lg-3 mb-4 mb-sm-5 mb-lg-0">
             <a href="">
               <img class="logo logo--header" src="img/logo--black.svg" alt="">
             </a>
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-5">
+          <div class="col-12 col-sm-6 col-lg-5 mb-4 mb-sm-0">
             <nav class="nav nav--footer">
               <ul class="nav__list nav__list--dotted">
                 <li class="nav__item">
@@ -310,13 +323,13 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <nav class="nav nav--footer">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link link" href="tel:">
                     <img class="me-3" src="img/icons/contact/phone.svg" alt="">
-                    +7(8512)99-52-52
+                    +7 (851) 199-52-52
                   </a>
                 </li>
 
@@ -352,9 +365,9 @@
 
       <div class="footer__info">
         <div class="row">
-          <div class="col-7">
+          <div class="col-12 col-lg-7 mb-4 mb-lg-0">
             <p class="footer__copyright">
-              Информация не является публичной офертой. Некоторы изображения
+              Информация не является публичной офертой. Некоторые изображения
               <br>
               взяты из общедоступных источников и все права на них принадлежат авторам.
               <br>
@@ -363,7 +376,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-5">
+          <div class="col-12 col-lg-5">
             <a target="_blank" href="" class="footer__privacy link">
               Политика обработки персональных данных
             </a>

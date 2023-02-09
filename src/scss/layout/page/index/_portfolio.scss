@@ -1,9 +1,12 @@
 #portfolio-home {
-
 }
 
 .portfolio-home {
   &__action {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 40px;
+    }
+
     margin-top: 72px;
     text-align: center;
 

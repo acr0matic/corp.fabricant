@@ -80,6 +80,10 @@
   }
 
   &--footer {
+    @include breakpoint($breakpoint-tablet--large) {
+      justify-content: flex-start;
+    }
+
     display: flex;
     justify-content: center;
 
@@ -90,17 +94,27 @@
 
     .nav__item {
       &:not(:last-child) {
+        @include breakpoint($breakpoint-tablet) {
+          margin-bottom: 12px;
+        }
+
+        @include breakpoint($breakpoint-mobile--large) {
+          margin-bottom: 8px;
+        }
+
         margin-bottom: 16px;
       }
     }
 
     .nav__link {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--small;
+      }
+
       display: inline-flex;
       align-items: center;
 
       color: $color-text__white;
-
-      // font-size: $font-size__text--big;
     }
   }
 }

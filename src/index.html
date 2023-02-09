@@ -66,6 +66,15 @@
     <div class="header__content">
       <div class="container">
         <div class="header__wrapper">
+          <div class="header__burger d-block d-lg-none">
+            <button class="hamburger hamburger--squeeze" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <!-- /.header__burger -->
+
           <div class="header__logo">
             <a href="">
               <img class="logo logo--header" src="img/logo.svg" alt="">
@@ -73,7 +82,7 @@
           </div>
           <!-- /.header__logo -->
 
-          <div class="header__contact">
+          <div class="header__contact d-none d-lg-block">
             <a class="link mb-2" href="" target="_blank">
               <img class="me-2" src="img/icons/contact/pin.svg" alt="">
               1-й проезд Рождественского, 1А
@@ -86,7 +95,7 @@
           </div>
           <!-- /.header__contact -->
 
-          <div class="header__callback">
+          <div class="header__callback d-none d-lg-block">
             <a class="header__phone link mb-2" href="tel:">
               <img class="me-3" src="img/icons/contact/phone.svg" alt="">
               8 (8512) 99-52-52
@@ -98,6 +107,10 @@
             </a>
           </div>
           <!-- /.header__callback -->
+
+          <a class="header__call d-block d-lg-none" href="tel:">
+            <img src="img/icons/contact/phone--big.svg" alt="">
+          </a>
         </div>
         <!-- /.header__wrapper -->
       </div>
@@ -105,7 +118,7 @@
     </div>
     <!-- /.header__content -->
 
-    <div class="header__nav">
+    <div class="header__nav d-none d-lg-block">
       <div class="container">
         <nav class="nav nav--header">
           <ul class="nav__list">
@@ -148,11 +161,11 @@
       <div class="hero">
         <div class="hero__content">
           <h1 class="hero__title">
-            КОМПЛЕКСНОЕ
+            Комплексное
             <br>
-            ОСТЕКЛЕНИЕ
+            остекление
             <br>
-            ФАСАДОВ
+            фасадов
           </h1>
 
           <div class="hero__advantage">
@@ -193,7 +206,7 @@
 
       <div class="service">
         <div class="row gy-4">
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-service">
               <div class="card-service__picture">
                 <img class="image image--cover" src=img/content/service/1.jpg alt="">
@@ -213,7 +226,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-service">
               <div class="card-service__picture">
                 <img class="image image--cover" src=img/content/service/2.jpg alt="">
@@ -233,7 +246,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-service">
               <div class="card-service__picture">
                 <img class="image image--cover" src=img/content/service/3.jpg alt="">
@@ -253,7 +266,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-service">
               <div class="card-service__picture">
                 <img class="image image--cover" src=img/content/service/4.jpg alt="">
@@ -273,7 +286,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-service">
               <div class="card-service__picture">
                 <img class="image image--cover" src=img/content/service/5.jpg alt="">
@@ -293,7 +306,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-service">
               <div class="card-service__picture">
                 <img class="image image--cover" src=img/content/service/6.jpg alt="">
@@ -361,8 +374,8 @@
       <!-- /.section__header -->
 
       <div class="advantage">
-        <div class="row gy-5">
-          <div class="col-4">
+        <div class="row gy-4 gy-md-5">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-advantage">
               <div class="card-advantage__header">
                 <h3 class="card-advantage__title">Опыт</h3>
@@ -381,7 +394,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-advantage">
               <div class="card-advantage__header">
                 <h3 class="card-advantage__title">Наши проекты</h3>
@@ -400,7 +413,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-advantage">
               <div class="card-advantage__header">
                 <h3 class="card-advantage__title">Проект под плюч</h3>
@@ -419,7 +432,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-advantage">
               <div class="card-advantage__header">
                 <h3 class="card-advantage__title">Производственная компания</h3>
@@ -438,7 +451,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-advantage">
               <div class="card-advantage__header">
                 <h3 class="card-advantage__title">Наши партнеры</h3>
@@ -457,7 +470,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card-advantage">
               <div class="card-advantage__header">
                 <h3 class="card-advantage__title">Производственная компания</h3>
@@ -496,10 +509,12 @@
 
           <div class="about-content__wrapper">
             <div class="row">
-              <div class="col-6 pe-0">
+              <div class="col-12 col-lg-6 pe-lg-0">
                 <h3 class="about-content__title">
-                  «ФабрикантЪ — оконные системы» – Динамично
-                  развивающаяся российская оконная компания, входящая в ГК «ФабрикантЪ»
+                  <span>
+                    «ФАБРИКАНТЪ — ОКОННЫЕ СИСТЕМЫ» – Динамично
+                    развивающаяся российская оконная компания, входящая в ГК «ФабрикантЪ»
+                  </span>
                 </h3>
 
                 <div class="about-content__info">
@@ -537,8 +552,8 @@
           <h3 class="about-order__title">ОТ и ДО посмотрите как происходит работа</h3>
 
           <div class="about-order__wrapper">
-            <div class="row">
-              <div class="col-4">
+            <div class="row gy-5 gy-md-0">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="about-order__card">
                   <div class="about-order__video">
                     <img class="about-order__preview image image--contain" src="img/layout/page/index/about/1.png" alt="">
@@ -564,7 +579,7 @@
               </div>
               <!-- /.col-4 -->
 
-              <div class="col-4">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="about-order__card">
                   <div class="about-order__video">
                     <img class="about-order__preview image image--contain" src="img/layout/page/index/about/2.png" alt="">
@@ -590,7 +605,7 @@
               </div>
               <!-- /.col-4 -->
 
-              <div class="col-4">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="about-order__card">
                   <div class="about-order__video">
                     <img class="about-order__preview image image--contain" src="img/layout/page/index/about/3.png" alt="">
@@ -653,7 +668,7 @@
     <div class="container">
       <div class="section__header">
         <h2 class="section__title section__title--line">
-          Некоторые из наших работ
+          Наши работы
         </h2>
       </div>
       <!-- /.section__header -->
@@ -662,17 +677,17 @@
         <div id="slider-portfolio-home" class="slider">
           <div class="swiper-control">
             <div class="row gx-5">
-              <div class="col-4">
+              <div class="col-12 col-md-4 mb-3 mb-md-0">
                 <button data-button="changeSlide" data-index="0" class="button button--block button-outline swiper-button swiper-button--active">Жилые комплексы</button>
               </div>
               <!-- /.col-4 -->
 
-              <div class="col-4">
+              <div class="col-12 col-md-4 mb-3 mb-md-0">
                 <button data-button="changeSlide" data-index="1" class="button button--block button-outline swiper-button">Коммерческие организации</button>
               </div>
               <!-- /.col-4 -->
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <button data-button="changeSlide" data-index="2" class="button button--block button-outline swiper-button">Гос.учереждения</button>
               </div>
               <!-- /.col-4 -->
@@ -684,7 +699,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="row g-5">
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/1.jpg" alt="">
@@ -696,9 +711,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/2.jpg" alt="">
@@ -710,9 +725,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/3.jpg" alt="">
@@ -724,9 +739,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/4.jpg" alt="">
@@ -738,9 +753,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/5.jpg" alt="">
@@ -752,9 +767,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/6.jpg" alt="">
@@ -766,7 +781,7 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
                 </div>
                 <!-- /.row -->
               </div>
@@ -774,7 +789,7 @@
 
               <div class="swiper-slide">
                 <div class="row g-5">
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/3.jpg" alt="">
@@ -786,9 +801,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/4.jpg" alt="">
@@ -800,9 +815,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/1.jpg" alt="">
@@ -814,9 +829,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/2.jpg" alt="">
@@ -828,9 +843,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/5.jpg" alt="">
@@ -842,9 +857,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/6.jpg" alt="">
@@ -856,7 +871,7 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
                 </div>
                 <!-- /.row -->
               </div>
@@ -864,7 +879,7 @@
 
               <div class="swiper-slide">
                 <div class="row g-5">
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/4.jpg" alt="">
@@ -876,9 +891,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/5.jpg" alt="">
@@ -890,9 +905,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/6.jpg" alt="">
@@ -904,9 +919,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/1.jpg" alt="">
@@ -918,9 +933,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/2.jpg" alt="">
@@ -932,9 +947,9 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card-portfolio-mini">
                       <picture class="card-portfolio__picture">
                         <img class="image image--cover" src="img/content/portfolio/mini/3.jpg" alt="">
@@ -946,7 +961,7 @@
                     </div>
                     <!-- /.card-portfolio-mini -->
                   </div>
-                  <!-- /.col-4 -->
+                  <!-- /.col-12 col-sm-6 col-lg-4 -->
                 </div>
                 <!-- /.row -->
               </div>
@@ -971,8 +986,8 @@
   <section id="callback" class="section">
     <div class="container">
       <div class="callback">
-        <div class="row">
-          <div class="col-7">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-7">
             <div class="callback__wrapper">
               <div class="section__header">
                 <h2 class="section__title">
@@ -988,7 +1003,7 @@
               </p>
 
               <form class="callback__form form form-callback">
-                <div class="input mb-4">
+                <div class="input mb-3 mb-sm-4">
                   <input placeholder="+7 (___) ____-___-___" autocomplete="off" type="tel" name="user_phone" class="input__field">
                   <span class="input__warning" src="" alt="">Номер телефона содержит ошибки</span>
                 </div>
@@ -1013,7 +1028,7 @@
           </div>
           <!-- /.col-7 -->
 
-          <div class="col-5">
+          <div class="col-12 col-sm-8 col-md-5">
             <div id="slider-callback" class="slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -1076,14 +1091,14 @@
     <div class="footer">
       <div class="footer__content">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-lg-3 mb-4 mb-sm-5 mb-lg-0">
             <a href="">
               <img class="logo logo--header" src="img/logo--black.svg" alt="">
             </a>
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-5">
+          <div class="col-12 col-sm-6 col-lg-5 mb-4 mb-sm-0">
             <nav class="nav nav--footer">
               <ul class="nav__list nav__list--dotted">
                 <li class="nav__item">
@@ -1103,13 +1118,13 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-sm-6 col-lg-4">
             <nav class="nav nav--footer">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link link" href="tel:">
                     <img class="me-3" src="img/icons/contact/phone.svg" alt="">
-                    +7(8512)99-52-52
+                    +7 (851) 199-52-52
                   </a>
                 </li>
 
@@ -1145,9 +1160,9 @@
 
       <div class="footer__info">
         <div class="row">
-          <div class="col-7">
+          <div class="col-12 col-lg-7 mb-4 mb-lg-0">
             <p class="footer__copyright">
-              Информация не является публичной офертой. Некоторы изображения
+              Информация не является публичной офертой. Некоторые изображения
               <br>
               взяты из общедоступных источников и все права на них принадлежат авторам.
               <br>
@@ -1156,7 +1171,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-5">
+          <div class="col-12 col-lg-5">
             <a target="_blank" href="" class="footer__privacy link">
               Политика обработки персональных данных
             </a>

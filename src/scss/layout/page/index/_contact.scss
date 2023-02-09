@@ -1,4 +1,8 @@
 #contact {
+  @include breakpoint($breakpoint-tablet) {
+    display: none;
+  }
+
   overflow: hidden;
   margin-top: 120px;
   padding-top: 0;
