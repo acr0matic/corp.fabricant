@@ -18,6 +18,10 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      bottom: 0;
+    }
+
     position: absolute;
     bottom: -60px;
     left: 0;

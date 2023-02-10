@@ -11,6 +11,10 @@
     margin-bottom: 24px;
 
     li {
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--small;
+      }
+
       font-weight: $weight-Medium;
 
       &:not(:last-child) {

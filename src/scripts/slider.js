@@ -79,6 +79,12 @@ const sliderCallback = new Swiper('#slider-callback .swiper', {
 });
 
 const sliderFacilityRelated = new Swiper('#slider-facility-related .swiper', {
-  slidesPerView: 4,
+  slidesPerView: 1.25,
   spaceBetween: 24,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+    },
+  },
 })

@@ -79,6 +79,14 @@
     }
 
     & > * {
+      @include breakpoint($breakpoint-tablet) {
+        width: 40%;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 100%;
+      }
+
       position: relative;
       flex-grow: 1;
       margin: 12px;
