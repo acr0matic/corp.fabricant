@@ -26,41 +26,104 @@
           Нажмите на категорию, чтобы увидеть только объекты выбранной категории
         </div>
 
-        <div class="facility__category">
-          <button class="button button-outline">все объекты</button>
-          <button class="button button-outline">Жилые комплексы</button>
-          <button class="button button-outline">офисные здания</button>
-          <button class="button button-outline">Торговые центры</button>
-          <button class="button button-outline">Банки</button>
+        <div id="slider-facility" class="slider">
+          <div class="facility-accordion handorgel">
+            <div class="handorgel__header">
+              <button class="handorgel__header__button">
+                <h3 class="handorgel__header__text">
+                  Категории
+                </h3>
+                <!-- /.handorgel__header__text -->
 
-          <button class="button button-outline">Мед. учереждения</button>
-          <button class="button button-outline">учебные заведения</button>
-          <button class="button button-outline">Развлекательные центры</button>
-          <button class="button button-outline">кафе и рестораны</button>
-          <button class="button button-outline">театры</button>
+                <div class="handorgel__indicator">
+                  <img alt="" class="handorgel__arrow" src="img/icons/control/dropdown__arrow.svg">
+                </div>
+                <!-- /.handorgel__indicator -->
+              </button>
+            </div>
+            <!-- /.handorgel__header -->
 
-          <button class="button button-outline">театры</button>
+            <div class="handorgel__content">
+              <div class="handorgel__content__inner">
+                <div class="facility__category custom-scrollbar">
+                  <button class="button button-outline swiper-button--active">Все объекты</button>
+                  <button class="button button-outline">Жилые комплексы</button>
+                  <button class="button button-outline">Офисные здания</button>
+                  <button class="button button-outline">Торговые центры</button>
+                  <button class="button button-outline">Банки</button>
+
+                  <button class="button button-outline">Мед. учереждения</button>
+                  <button class="button button-outline">Учебные заведения</button>
+                  <button class="button button-outline">Развлекательные центры</button>
+                  <button class="button button-outline">Кафе и рестораны</button>
+                  <button class="button button-outline">Театры</button>
+
+                  <button class="button button-outline">Банки</button>
+                </div>
+                <!-- /.facility__category -->
+              </div>
+            </div>
+          </div>
+          <!-- /.faq__accordion -->
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="facility__grid">
+                  @@loop('layout/template/card/facility.html', [
+                  { "title": "My post title", "image": "img/content/facility/1.jpg" },
+                  { "title": "Another post", "image": "img/content/facility/2.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/3.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/4.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/5.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/9.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/10.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/12.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/6.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/7.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/8.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/5.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/9.jpg" }
+                  ])
+                </div>
+                <!-- /.facility__grid -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="facility__grid">
+                  @@loop('layout/template/card/facility.html', [
+                  { "title": "My post title", "image": "img/content/facility/1.jpg" },
+                  { "title": "Another post", "image": "img/content/facility/2.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/3.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/4.jpg" },
+                  ])
+                </div>
+                <!-- /.facility__grid -->
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="facility__grid">
+                  @@loop('layout/template/card/facility.html', [
+                  { "title": "My post title", "image": "img/content/facility/1.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/12.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/6.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/7.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/8.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/5.jpg" },
+                  { "title": "One more post", "image": "img/content/facility/9.jpg" }
+                  ])
+                </div>
+                <!-- /.facility__grid -->
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper -->
         </div>
-        <!-- /.facility__category -->
-
-        <div class="facility__grid">
-          @@loop('layout/template/card/facility.html', [
-          { "title": "My post title", "image": "img/content/facility/1.jpg" },
-          { "title": "Another post", "image": "img/content/facility/2.jpg" },
-          { "title": "One more post", "image": "img/content/facility/3.jpg" },
-          { "title": "One more post", "image": "img/content/facility/4.jpg" },
-          { "title": "One more post", "image": "img/content/facility/5.jpg" },
-          { "title": "One more post", "image": "img/content/facility/9.jpg" },
-          { "title": "One more post", "image": "img/content/facility/10.jpg" },
-          { "title": "One more post", "image": "img/content/facility/12.jpg" },
-          { "title": "One more post", "image": "img/content/facility/6.jpg" },
-          { "title": "One more post", "image": "img/content/facility/7.jpg" },
-          { "title": "One more post", "image": "img/content/facility/8.jpg" },
-          { "title": "One more post", "image": "img/content/facility/5.jpg" },
-          { "title": "One more post", "image": "img/content/facility/9.jpg" }
-          ])
-        </div>
-        <!-- /.facility__grid -->
+        <!-- /.slider -->
       </div>
       <!-- /.facility -->
     </div>

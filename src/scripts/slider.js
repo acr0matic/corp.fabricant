@@ -1,23 +1,62 @@
-const homePortfolio = new Swiper('#slider-portfolio-home .swiper', {
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
+const sliderHomePortfolio = document.getElementById('slider-portfolio-home');
+if (sliderHomePortfolio) {
+  const control = sliderHomePortfolio.querySelectorAll('.swiper-control .button');
 
-  on: {
-    afterInit: (instance) => {
-      const control = instance.el.closest('.slider').querySelectorAll('.swiper-control .button');
-      control.forEach(button => {
-        button.addEventListener('click', (e) => {
-          instance.slideTo(button.dataset.index);
+  new Swiper(sliderHomePortfolio.querySelector('.swiper'), {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
 
-          control.forEach(el => el.classList.remove('swiper-button--active'));
-          button.classList.add('swiper-button--active');
+    on: {
+      afterInit: (instance) => {
+        control.forEach(button => {
+          button.addEventListener('click', (e) => {
+            instance.slideTo(button.dataset.index);
+
+            control.forEach(el => el.classList.remove(StyleСlass.slider.active));
+            button.classList.add(StyleСlass.slider.active);
+          });
         });
-      });
+      }
     }
-  }
-})
+  })
+}
+
+const sliderFacility = document.getElementById('slider-facility');
+if (sliderFacility) {
+  const control = sliderFacility.querySelectorAll('.button');
+
+  new Swiper(sliderFacility.querySelector('.swiper'), {
+    autoHeight: true,
+    simulateTouch: false,
+    allowTouchMove: false,
+
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+
+    on: {
+      init: (instance) => {
+        for (let index = 0; index < instance.slides.length; index++) {
+          control[index].dataset.index = index;
+        }
+      },
+
+      afterInit: (instance) => {
+        control.forEach(button => {
+          button.addEventListener('click', (e) => {
+            instance.slideTo(button.dataset.index);
+
+            control.forEach(el => el.classList.remove(StyleСlass.slider.active));
+            button.classList.add(StyleСlass.slider.active);
+          });
+        });
+      }
+    }
+  });
+}
 
 const sliderCallback = new Swiper('#slider-callback .swiper', {
   simulateTouch: false,
@@ -38,3 +77,8 @@ const sliderCallback = new Swiper('#slider-callback .swiper', {
     crossFade: true
   },
 });
+
+const sliderFacilityRelated = new Swiper('#slider-facility-related .swiper', {
+  slidesPerView: 4,
+  spaceBetween: 24,
+})

@@ -87,32 +87,44 @@
       <!-- /.section__header -->
 
       <div class="related">
-        <div class="row">
-          <div class="col-3">
-            @@include('layout/template/card/facility.html',
-            { "title": "My post title", "image": "img/content/facility/1.jpg" })
-          </div>
-          <!-- /.col-3 -->
+        <div id="slider-facility-related" class="slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                @@include('layout/template/card/facility.html',
+                { "title": "My post title", "image": "img/content/facility/1.jpg" })
+              </div>
+              <!-- /.swiper-slide -->
 
-          <div class="col-3">
-            @@include('layout/template/card/facility.html',
-            { "title": "My post title", "image": "img/content/facility/1.jpg" })
-          </div>
-          <!-- /.col-3 -->
+              <div class="swiper-slide">
+                @@include('layout/template/card/facility.html',
+                { "title": "My post title", "image": "img/content/facility/2.jpg" })
+              </div>
+              <!-- /.swiper-slide -->
 
-          <div class="col-3">
-            @@include('layout/template/card/facility.html',
-            { "title": "My post title", "image": "img/content/facility/1.jpg" })
-          </div>
-          <!-- /.col-3 -->
+              <div class="swiper-slide">
+                @@include('layout/template/card/facility.html',
+                { "title": "My post title", "image": "img/content/facility/3.jpg" })
+              </div>
+              <!-- /.swiper-slide -->
 
-          <div class="col-3">
-            @@include('layout/template/card/facility.html',
-            { "title": "My post title", "image": "img/content/facility/1.jpg" })
+              <div class="swiper-slide">
+                @@include('layout/template/card/facility.html',
+                { "title": "My post title", "image": "img/content/facility/4.jpg" })
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                @@include('layout/template/card/facility.html',
+                { "title": "My post title", "image": "img/content/facility/5.jpg" })
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
           </div>
-          <!-- /.col-3 -->
+          <!-- /.swiper -->
         </div>
-        <!-- /.row -->
+        <!-- /.slider -->
       </div>
       <!-- /.related -->
     </div>

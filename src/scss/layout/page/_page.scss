@@ -7,7 +7,7 @@
     display: inline-flex;
     align-items: center;
 
-    margin-top: 8px;
+    margin-top: 12px;
     margin-bottom: 24px;
 
     li {
@@ -29,10 +29,18 @@
   }
 
   &__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 30px;
+    }
+
     margin-bottom: 60px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large + 3px;
+    }
+
     display: flex;
     align-items: center;
 
@@ -41,6 +49,10 @@
     text-transform: uppercase;
 
     &::before {
+      @include breakpoint($breakpoint-tablet) {
+        content: none;
+      }
+
       content: "";
       display: block;
 
@@ -56,6 +68,10 @@
     }
 
     &--big {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__title--small;
+      }
+
       font-size: $font-size__title--large;
     }
   }

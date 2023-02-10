@@ -3,11 +3,24 @@
 
 .facility {
   &__info {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
     margin-top: -30px;
     color: $color-text__gray;
   }
 
   &__category {
+    @include breakpoint($breakpoint-tablet) {
+      overflow: auto;
+      max-height: 205px;
+      margin-top: 0;
+      margin-right: 0;
+
+      padding-right: 4px;
+    }
+
     display: flex;
     flex-wrap: wrap;
 
@@ -16,6 +29,24 @@
     margin-bottom: -20px;
 
     button {
+      @include breakpoint($breakpoint-tablet) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+
+        padding: 12px 24px;
+
+        border: none;
+        border-bottom: 1px solid #797979;
+        border-radius: 0;
+
+        background-color: #e7e7e7;
+
+        font-weight: $weight-Medium;
+        text-align: left;
+        text-transform: none;
+      }
+
       flex-grow: 1;
 
       margin-right: 16px;
@@ -32,6 +63,10 @@
   }
 
   &__grid {
+    @include breakpoint($breakpoint-tablet) {
+      padding-top: 36px;
+    }
+
     display: inline-flex;
     flex-flow: wrap;
 

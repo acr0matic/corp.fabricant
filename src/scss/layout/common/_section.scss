@@ -23,15 +23,17 @@
 
     font-weight: $weight-Bold;
     font-size: $font-size__title--small;
-    font-family: NotoSerif, serif;
+    font-family: NotoSans, sans-serif;
 
     text-align: center;
-    text-transform: uppercase;
 
     &--line {
       position: relative;
       width: fit-content;
       margin: 0 auto;
+
+      font-family: NotoSerif, serif;
+      text-transform: uppercase;
 
       &::before,
       &::after {

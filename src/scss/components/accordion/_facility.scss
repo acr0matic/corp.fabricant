@@ -1,0 +1,41 @@
+.facility-accordion {
+  .handorgel__header {
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+    }
+
+    display: none;
+    background-color: #ef8c33;
+  }
+
+  .handorgel__header__button {
+    width: 100%;
+    padding: 16px 24px;
+    border: none;
+
+    text-transform: uppercase;
+  }
+
+  .handorgel__header__text {
+    font-weight: $weight-Medium;
+  }
+
+  .handorgel__content {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+      height: 0;
+    }
+
+    display: block;
+    height: initial;
+  }
+
+  .handorgel__content__inner {
+    @include breakpoint($breakpoint-tablet) {
+      opacity: 0;
+    }
+
+    padding: 0;
+    opacity: 1;
+  }
+}

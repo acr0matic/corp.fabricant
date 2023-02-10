@@ -1,0 +1,89 @@
+.handorgel {
+  border: none;
+
+  &__header {
+    &__button {
+      @include breakpoint($breakpoint-tablet--large) {
+        border-width: 1px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 15px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 20px 40px;
+      border: 2px solid #5f5f5f;
+
+      background-color: transparent !important;
+      transition: $transition ease;
+
+      @media (hover: hover) {
+        &:hover {
+          border-color: #ffffff;
+        }
+      }
+    }
+
+    &__text {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__title--small - 4px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__title--small - 8px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: 14px;
+      }
+
+      max-width: 85%;
+
+      font-weight: $weight-Regular;
+      font-size: $font-size__text--large;
+    }
+
+    &--open {
+      .handorgel__indicator {
+        transform: rotate(180deg);
+      }
+
+      .handorgel__header__button {
+        border-color: #ffffff;
+      }
+    }
+  }
+
+  &__indicator {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 18px;
+    }
+
+    transition: $transition ease;
+  }
+
+  &__content {
+    border-top: none;
+    background-color: transparent;
+
+    &__inner {
+      @include breakpoint($breakpoint-tablet) {
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: 14px;
+      }
+
+      padding-right: 40px;
+      padding-bottom: 40px;
+      padding-left: 40px;
+    }
+  }
+}

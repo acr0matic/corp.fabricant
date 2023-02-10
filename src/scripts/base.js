@@ -11,4 +11,8 @@ const StyleСlass = {
   'mobile': {
     'open': 'mobile-menu--open',
   },
+
+  'slider': {
+    'active': 'swiper-button--active',
+  },
 }
