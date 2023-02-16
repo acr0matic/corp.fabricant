@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'default' // default или wordpress
+process.env.NODE_ENV = 'wordpress' // default или wordpress
 
 const { task, series } = require('gulp');
 const requireDir = require('require-dir');

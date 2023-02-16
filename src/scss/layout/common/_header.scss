@@ -23,6 +23,8 @@
 
   &__content {
     @include breakpoint($breakpoint-tablet--large) {
+      padding: 18px 8px;
+
       border-bottom: 4px solid $palette-gray;
       background-color: $palette-white;
     }
@@ -30,7 +32,8 @@
     position: relative;
     z-index: 3;
 
-    padding: 18px 8px;
+    height: 100px;
+    padding: 24px 8px;
   }
 
   &__logo {

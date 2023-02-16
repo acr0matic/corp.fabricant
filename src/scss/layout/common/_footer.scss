@@ -60,13 +60,6 @@
   }
 
   &__privacy {
-    @include breakpoint($breakpoint-tablet--large) {
-      text-align: left;
-    }
-
-    display: block;
-    margin-top: -8px;
     padding: 8px 0;
-    text-align: right;
   }
 }

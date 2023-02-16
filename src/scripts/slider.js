@@ -3,6 +3,7 @@ if (sliderHomePortfolio) {
   const control = sliderHomePortfolio.querySelectorAll('.swiper-control .button');
 
   new Swiper(sliderHomePortfolio.querySelector('.swiper'), {
+    autoHeight: true,
     effect: 'fade',
     fadeEffect: {
       crossFade: true

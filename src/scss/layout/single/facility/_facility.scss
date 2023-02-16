@@ -11,18 +11,22 @@
 
   &__gallery {
     @include breakpoint($breakpoint-tablet) {
-      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0;
     }
 
     display: flex;
+    flex-wrap: wrap;
 
     width: 100%;
+    margin-bottom: -16px;
 
     & > * {
       position: relative;
       flex-grow: 1;
+      flex-shrink: 0;
 
-      max-width: 30%;
+      max-width: 25%;
 
       &:not(:last-child) {
         @include breakpoint($breakpoint-tablet) {
@@ -31,15 +35,22 @@
         }
 
         margin-right: 16px;
+        margin-bottom: 16px;
       }
     }
   }
 
   &__picture {
     @include breakpoint($breakpoint-tablet) {
-      width: 100%;
+      flex-grow: 0;
+      width: calc(50% - 6px);
+
       max-width: none;
-      height: auto;
+      height: 180px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 150px;
     }
 
     overflow: hidden;
